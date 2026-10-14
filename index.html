@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -13,7 +14,6 @@
 
 <header class="header">
     <a href="#home" class="logo">MAFIY<span> FAMILY</span></a>
-
     <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">☰</button>
 
     <nav class="nav" id="nav">
@@ -35,14 +35,12 @@
                 Не просто сім'я. Це люди, спільні цілі<br>
                 та історія, яку ми створюємо разом.
             </p>
-
             <div class="hero-actions">
                 <button class="primary-btn" data-open-modal>
                     Стати частиною сім'ї <span>↗</span>
                 </button>
                 <a href="#about" class="secondary-btn">Дізнатися більше ↓</a>
             </div>
-
             <div class="hero-bottom">
                 <span>01 / СІМ'Я</span>
                 <span>VERBA ONLINE</span>
@@ -139,31 +137,39 @@
 
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button class="modal-close" data-close-modal aria-label="Закрити">×</button>
+
         <div class="eyebrow">MAFIY FAMILY / APPLICATION</div>
         <h2 id="modalTitle">Твоя історія<br><span>починається тут.</span></h2>
         <p class="modal-description">Заповни форму, щоб подати заявку до нашої сім'ї.</p>
 
         <form id="applicationForm">
             <label for="nickname">Ігровий нік</label>
-            <input id="nickname" name="nickname" placeholder="Наприклад, Player_Name" required maxlength="32">
+            <input id="nickname" name="nickname"
+                   placeholder="Наприклад, Player_Name"
+                   required maxlength="32">
 
             <div class="form-row">
                 <div>
                     <label for="age">Вік</label>
-                    <input id="age" name="age" type="number" placeholder="18" min="1" max="99" required>
+                    <input id="age" name="age" type="number"
+                           placeholder="18" min="1" max="99" required>
                 </div>
                 <div>
                     <label for="level">Рівень у грі</label>
-                    <input id="level" name="level" type="number" placeholder="10" min="1" max="999" required>
+                    <input id="level" name="level" type="number"
+                           placeholder="10" min="1" max="999" required>
                 </div>
             </div>
 
-            <label for="discord">Discord</label>
-            <input id="discord" name="discord" placeholder="Твій Discord нік" required maxlength="64">
+            <label for="discord">Discord нік</label>
+            <input id="discord" name="discord"
+                   placeholder="Твій Discord нік"
+                   required maxlength="64">
 
-            <button class="primary-btn submit-btn" type="submit">
+            <button class="primary-btn submit-btn" id="submitButton" type="submit">
                 Надіслати заявку <span>↗</span>
             </button>
+
             <p class="form-message" id="formMessage" role="status"></p>
         </form>
     </div>
@@ -172,3 +178,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+```
