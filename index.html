@@ -1,0 +1,176 @@
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101112">
+    <title>MAFIY FAMILY — Verba Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">MAFIY<span> FAMILY</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">☰</button>
+
+    <nav class="nav" id="nav">
+        <a href="#home">Головна</a>
+        <a href="#leaders">Керівництво</a>
+        <a href="#garage">Гараж</a>
+        <a href="#about">Про нас</a>
+        <button class="nav-join" data-open-modal>Приєднатися ↗</button>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="eyebrow"><span class="dot"></span> VERBA ONLINE · FAMILY</div>
+            <h1>MAFIY<br><span>FAMILY</span></h1>
+            <p class="hero-description">
+                Не просто сім'я. Це люди, спільні цілі<br>
+                та історія, яку ми створюємо разом.
+            </p>
+
+            <div class="hero-actions">
+                <button class="primary-btn" data-open-modal>
+                    Стати частиною сім'ї <span>↗</span>
+                </button>
+                <a href="#about" class="secondary-btn">Дізнатися більше ↓</a>
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / СІМ'Я</span>
+                <span>VERBA ONLINE</span>
+            </div>
+        </div>
+        <div class="hero-watermark">MF</div>
+    </section>
+
+    <section class="section leaders" id="leaders">
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow">НАША КОМАНДА</div>
+                <h2>За кожною сім'єю<br>стоять <span>люди.</span></h2>
+            </div>
+            <p>Ті, хто розвиває сім'ю, підтримує команду та рухається вперед.</p>
+        </div>
+
+        <div class="leader-grid">
+            <article class="leader-card leader-main">
+                <div class="leader-number">01 / LEADER</div>
+                <div class="leader-info">
+                    <span class="role">ЛІДЕР СІМ'Ї</span>
+                    <h3>Denys_Bondar</h3>
+                    <p>Головний напрямок. Спільна мета.</p>
+                </div>
+                <div class="leader-symbol">M</div>
+            </article>
+
+            <article class="leader-card leader-deputy">
+                <div class="leader-number">02 / DEPUTY</div>
+                <div class="leader-info">
+                    <span class="role">ЗАСТУПНИК</span>
+                    <h3>Pasha_Semenov</h3>
+                    <p>Підтримка команди та розвиток сім'ї.</p>
+                </div>
+                <div class="leader-symbol">F</div>
+            </article>
+        </div>
+    </section>
+
+    <section class="garage" id="garage">
+        <div class="garage-image"></div>
+        <div class="garage-content">
+            <div class="eyebrow">OUR GARAGE / 001</div>
+            <h2>Стиль —<br>у деталях.</h2>
+            <p>У нашому гаражі вже є перший автомобіль. І це тільки початок — попереду ще багато нового.</p>
+            <div class="garage-count">
+                <strong>01</strong>
+                <span>АВТОМОБІЛЬ У ГАРАЖІ</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="eyebrow">НАШІ ПРИНЦИПИ</div>
+        <h2>Сім'я починається<br>з <span>довіри.</span></h2>
+
+        <div class="values-grid">
+            <article class="value-card">
+                <span class="value-index">01</span>
+                <h3>Єдність</h3>
+                <p>Ми граємо разом, підтримуємо одне одного та створюємо спільні спогади.</p>
+            </article>
+            <article class="value-card">
+                <span class="value-index">02</span>
+                <h3>Повага</h3>
+                <p>Повага до кожного учасника — основа здорової атмосфери в сім'ї.</p>
+            </article>
+            <article class="value-card">
+                <span class="value-index">03</span>
+                <h3>Розвиток</h3>
+                <p>Нові цілі, нові можливості та постійний рух уперед.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="join-section">
+        <div class="join-decoration">MF</div>
+        <div class="eyebrow">YOUR STORY STARTS HERE</div>
+        <h2>Місце в сім'ї<br><span>може бути твоїм.</span></h2>
+        <p>Готовий стати частиною MAFIY FAMILY?</p>
+        <button class="primary-btn" data-open-modal>Подати заявку <span>↗</span></button>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="#home" class="logo">MAFIY<span> FAMILY</span></a>
+    <p>Не просто гра. Наша спільна історія.</p>
+    <span class="footer-copy">© 2026 MAFIY FAMILY · VERBA ONLINE</span>
+</footer>
+
+<div class="modal" id="applicationModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" data-close-modal aria-label="Закрити">×</button>
+        <div class="eyebrow">MAFIY FAMILY / APPLICATION</div>
+        <h2 id="modalTitle">Твоя історія<br><span>починається тут.</span></h2>
+        <p class="modal-description">Заповни форму, щоб подати заявку до нашої сім'ї.</p>
+
+        <form id="applicationForm">
+            <label for="nickname">Ігровий нік</label>
+            <input id="nickname" name="nickname" placeholder="Наприклад, Player_Name" required maxlength="32">
+
+            <div class="form-row">
+                <div>
+                    <label for="age">Вік</label>
+                    <input id="age" name="age" type="number" placeholder="18" min="1" max="99" required>
+                </div>
+                <div>
+                    <label for="level">Рівень у грі</label>
+                    <input id="level" name="level" type="number" placeholder="10" min="1" max="999" required>
+                </div>
+            </div>
+
+            <label for="discord">Discord</label>
+            <input id="discord" name="discord" placeholder="Твій Discord нік" required maxlength="64">
+
+            <button class="primary-btn submit-btn" type="submit">
+                Надіслати заявку <span>↗</span>
+            </button>
+            <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
