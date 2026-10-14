@@ -4,7 +4,7 @@
 // ==================================================
 
 // 1. Встав URL свого Discord Webhook:
-const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1560037890061238402/uqNgy3UgxlQ-slMcUC9ylBkv6dZYqAeKRjbft1wB48EyFWyhNN_lSsJJ3zoiGS0EggBc";
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1560040387991838723/GdZP39Z8kjEgDd7-LLf42V2ZuCXtmgu6NDCv4xG11NPzTkjGIS1voC5rhh6zDZwiGYl3";
 
 // 2. Встав Discord ID лідера:
 const LEADER_ID = "1499523191947923627";
