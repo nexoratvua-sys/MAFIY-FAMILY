@@ -105,7 +105,7 @@ a {
     align-items: center;
     overflow: hidden;
     background:
-        linear-gradient(90deg, rgba(12,13,13,.97) 0%, rgba(12,13,13,.82) 42%, rgba(12,13,13,.2) 100%),
+        linear-gradient(90deg, rgba(12,13,13,.97), rgba(12,13,13,.65) 55%, rgba(12,13,13,.2)),
         url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2200&q=85') center/cover;
 }
 
@@ -147,7 +147,9 @@ a {
     font-weight: 900;
 }
 
-.hero h1 span {
+.hero h1 span,
+.section h2 span,
+.join-section h2 span {
     color: var(--accent);
 }
 
@@ -184,6 +186,11 @@ a {
 .primary-btn:hover {
     background: #e1c68e;
     transform: translateY(-2px);
+}
+
+.primary-btn:disabled {
+    cursor: wait;
+    transform: none;
 }
 
 .primary-btn span {
@@ -234,14 +241,11 @@ a {
     margin-bottom: 45px;
 }
 
-.section h2, .join-section h2 {
+.section h2,
+.join-section h2 {
     font-size: clamp(36px, 5vw, 62px);
     line-height: 1.1;
     letter-spacing: -2px;
-}
-
-.section h2 span, .join-section h2 span {
-    color: var(--accent);
 }
 
 .section-heading > p {
@@ -422,7 +426,10 @@ a {
     border-bottom: 1px solid var(--line);
 }
 
-.join-section .eyebrow, .join-section h2, .join-section p, .join-section button {
+.join-section .eyebrow,
+.join-section h2,
+.join-section p,
+.join-section button {
     position: relative;
     z-index: 1;
 }
@@ -457,7 +464,8 @@ a {
     flex-wrap: wrap;
 }
 
-.footer p, .footer-copy {
+.footer p,
+.footer-copy {
     color: var(--muted);
     font-size: 10px;
 }
