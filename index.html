@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#101112">
+    <meta name="description" content="MAFIY FAMILY — сім'я Verba Online. Спільні цілі, повага та розвиток.">
     <title>MAFIY FAMILY — Verba Online</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
     <a href="#home" class="logo">MAFIY<span> FAMILY</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
 
     <nav class="nav" id="nav">
         <a href="#home">Головна</a>
         <a href="#leaders">Керівництво</a>
         <a href="#garage">Гараж</a>
         <a href="#about">Про нас</a>
-        <button class="nav-join" data-open-modal>Приєднатися ↗</button>
+        <a class="nav-join application-link" href="https://example.com" target="_blank" rel="noopener noreferrer">Приєднатися ↗</a>
     </nav>
 </header>
 
@@ -35,9 +37,9 @@
                 та історія, яку ми створюємо разом.
             </p>
             <div class="hero-actions">
-                <button class="primary-btn" data-open-modal>
+                <a class="primary-btn application-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
                     Стати частиною сім'ї <span>↗</span>
-                </button>
+                </a>
                 <a href="#about" class="secondary-btn">Дізнатися більше ↓</a>
             </div>
             <div class="hero-bottom">
@@ -85,7 +87,7 @@
         <div class="garage-content">
             <div class="eyebrow">OUR GARAGE / 001</div>
             <h2>Стиль —<br>у деталях.</h2>
-            <p>У нашому гаражі вже є перший автомобіль. І це тільки початок — попереду ще багато нового.</p>
+            <p>Ми збираємо преміальну колекцію. У гаражі вже є перший автомобіль, і це тільки початок.</p>
             <div class="garage-count">
                 <strong>01</strong>
                 <span>АВТОМОБІЛЬ У ГАРАЖІ</span>
@@ -121,7 +123,9 @@
         <div class="eyebrow">YOUR STORY STARTS HERE</div>
         <h2>Місце в сім'ї<br><span>може бути твоїм.</span></h2>
         <p>Готовий стати частиною MAFIY FAMILY?</p>
-        <button class="primary-btn" data-open-modal>Подати заявку <span>↗</span></button>
+        <a class="primary-btn application-link" href="https://discord.gg/6kczEnJ5s" target="_blank" rel="noopener noreferrer">
+            Подати заявку <span>↗</span>
+        </a>
     </section>
 </main>
 
@@ -130,49 +134,6 @@
     <p>Не просто гра. Наша спільна історія.</p>
     <span class="footer-copy">© 2026 MAFIY FAMILY · VERBA ONLINE</span>
 </footer>
-
-<div class="modal" id="applicationModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="modal-close" data-close-modal aria-label="Закрити">×</button>
-
-        <div class="eyebrow">MAFIY FAMILY / APPLICATION</div>
-        <h2 id="modalTitle">Твоя історія<br><span>починається тут.</span></h2>
-        <p class="modal-description">Заповни форму, щоб подати заявку до нашої сім'ї.</p>
-
-        <form id="applicationForm">
-            <label for="nickname">Ігровий нік</label>
-            <input id="nickname" name="nickname"
-                   placeholder="Наприклад, Player_Name"
-                   required maxlength="32">
-
-            <div class="form-row">
-                <div>
-                    <label for="age">Вік</label>
-                    <input id="age" name="age" type="number"
-                           placeholder="18" min="1" max="99" required>
-                </div>
-                <div>
-                    <label for="level">Рівень у грі</label>
-                    <input id="level" name="level" type="number"
-                           placeholder="10" min="1" max="999" required>
-                </div>
-            </div>
-
-            <label for="discord">Discord нік</label>
-            <input id="discord" name="discord"
-                   placeholder="Твій Discord нік"
-                   required maxlength="64">
-
-            <button class="primary-btn submit-btn" id="submitButton" type="submit">
-                Надіслати заявку <span>↗</span>
-            </button>
-
-            <p class="form-message" id="formMessage" role="status"></p>
-        </form>
-    </div>
-</div>
 
 <script src="script.js"></script>
 </body>
